@@ -1,0 +1,4 @@
+Java 8 or above
+MySQL Connector/J
+Apache NetBeans IDE
+MySQL Server
