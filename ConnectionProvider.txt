@@ -1,0 +1,67 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Project;
+import java.sql.*;
+/**
+ *
+ * @author Admin
+ */
+//public class ConnectionProvider {
+
+    /**
+     *
+     * @param args
+     */
+    //public static void main(String args[]){
+
+    /**
+     *
+     * @return
+     */
+   // public static Connection getCon()
+    //{
+        //try
+       // {
+            //Class.forName("com.mysql.cj.jdbc.Driver");
+            //Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","!@#adi1010");
+           // return con;
+      //  }
+        //catch (ClassNotFoundException | SQLException e)
+       // {
+           // return null;
+       // }
+    //}
+//} 
+public class ConnectionProvider{  
+ public static Connection getCon(){
+    
+
+        
+        
+    /**
+     *
+     */
+   
+    try{  
+    Class.forName("com.mysql.jdbc.Driver");  
+    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","shree1010");  
+    //here sonoo is database name, root is username and password  
+    Statement st=con.createStatement();  
+   /*ResultSet rs;
+            rs=stmt.executeQuery("select * from patient");  
+    while(rs.next())  
+    System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3)); */ 
+return con;
+
+ //   con.close();  
+    }catch(Exception e){ System.out.println(e);
+    return null;
+    }  
+  
+    }  
+  public static void main(String args[]){ 
+      getCon();
+}
+}
