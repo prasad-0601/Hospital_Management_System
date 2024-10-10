@@ -1,0 +1,24 @@
+# Ignore NetBeans project specific files
+nbproject/
+
+# Ignore build files
+build/
+dist/
+
+# Ignore compiled class files
+*.class
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE specific files
+*.iml
+.idea/
+
+# Ignore database credentials
+ConnectionProvider.txt
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
